@@ -33,12 +33,15 @@ function solve() {
         x2 = (-b - d ** (1/2))/(2*a);
 
         console.log(x1 + '-x1,', x2 + '-x2');
+        document.getElementById('outD').innerHTML = 'D = ' + d;
+        document.getElementById('outx1').innerHTML = 'x <sub>1</sub> = ' + x1;
+        document.getElementById('outx2').innerHTML = 'x <sub>2</sub> = ' + x2;
     } else {
         console.log('нет решений!');
+        document.getElementById('outD').innerHTML = 'D = ' + d;
+        document.getElementById('outx1').innerHTML = 'корней нет, т.к. D < 0';
+        document.getElementById('outx2').innerHTML = 'корней нет, т.к. D < 0';
     }
 
 
-    document.getElementById('outD').innerHTML = 'D = ' + d;
-    document.getElementById('outx1').innerHTML = 'x <sub>1</sub> = ' + x1;
-    document.getElementById('outx2').innerHTML = 'x <sub>2</sub> = ' + x2;
 }
