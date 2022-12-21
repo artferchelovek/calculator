@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/first.css">
+    
+    <title>Решение квадратных уравнений</title>
+</head>
+<body>
+    <header id="header">
+        <a href="/index.html" class="back">&#8678;</a>
+        <p class="solve">ax&#178; &plusmn; bx &plusmn; c = 0</p>
+    </header>
+    
+    <p class="chose">Введите коэффиценты уравнения</p>
+    <form>
+        <div id="koef">
+            <p class="a">a - <input placeholder="  клик" type="text" id="a"></p>
+            <p class="b">b - <input placeholder="  клик" type="text" id="b"></p>
+            <p class="c">c - <input placeholder="  клик" type="text" id="c"></p>
+        </div>
+        
+        <button class='btnres' type="reset">Очистить </button>
+    </form>
+    <button class="btn" onclick="solve()">Решить</button>
+    <div id="answers">
+        <p id="outD" class="D">D = </p>
+        <p id="outx1" class="x1">x <sub>1</sub> = </p>
+        <p id="outx2" class="x2">x <sub>2</sub> = </p>
+    </div>
+    
+    
+    
+    
+    <script src="/first.js"></script>
+</body>
+</html>
