@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение системы с двумя неизвестными</title>
+    <link rel="stylesheet" href="/styles/sec.css">
+</head>
+<body>
+    <p class="main">Решение системы с тремя неизвестными</p>
+    <div id="urav">
+        <p class="urav1">a <sub>1</sub>* x <sub>1</sub> + b <sub>1</sub>*x <sub>2</sub> + c <sub>1</sub>* x <sub>3</sub> = q <sub>1</sub> </p>
+        <p class="urav2">a <sub>2</sub>* x <sub>1</sub> + b <sub>2</sub>*x <sub>2</sub> + c <sub>2</sub>* x <sub>3</sub> = q <sub>2</sub> </p>
+        <p class="urav3">a <sub>3</sub>* x <sub>1</sub> + b <sub>3</sub>*x <sub>2</sub> + c <sub>3</sub>* x <sub>3</sub> = q <sub>3</sub> </p>
+    </div>
+    <form>
+        <table id="table">
+            <tr>
+                <td>A1</td>
+                <td><input type="text" id="a1"></td>
+                <td>A2</td>
+                <td><input type="text" id="a2"></td>
+                <td>A3</td>
+                <td><input type="text" id="a3"></td>
+            </tr>
+            <tr>
+                <td>B1</td>
+                <td><input type="text" id="b1"></td>
+                <td>B2</td>
+                <td><input type="text" id="b2"></td>
+                <td>B3</td>
+                <td><input type="text" id="b3"></td>
+            </tr>
+            <tr>
+                <td>C1</td>
+                <td><input type="text" id="c1"></td>
+                <td>C2</td>
+                <td><input type="text" id="c2"></td>
+                <td>C3</td>
+                <td><input type="text" id="c3"></td>
+            </tr>
+            <tr>
+                <td>q1</td>
+                <td><input type="text" id="q1"></td>
+                <td>q2</td>
+                <td><input type="text" id="q2"></td>
+                <td>q3</td>
+                <td><input type="text" id="q3"></td>
+            </tr>
+        </table>
+        <button class='btnres' type="reset">Очистить </button>
+    </form>
+    <button class="btn" onclick="matrix()">Решить</button>
+    
+    <div id="answers">
+        <p id="outx1" class="x1">x1 -</p>
+        <p id="outx2" class="x2">x2 -</p>
+        <p id="outx3" class="x3">x3 -</p>
+    </div>
+    
+    <p class="reshenie">Подробное решение</p>
+
+    <script src="/js files/matrix.js"></script>
+</body>
+</html>
