@@ -9,29 +9,31 @@
     <title>Решение квадратных уравнений</title>
 </head>
 <body>
-    <header id="header">
-        <a href="/index.html" class="back">&#8678;</a>
-        <p class="solve">ax&#178; &plusmn; bx &plusmn; c = 0</p>
-    </header>
+    <a href="/index.html">
+        <div class="back">НАЗАД</div>
+    </a>
+    <p class="kvadr">ax<sup>2</sup> &#177; bx &#177; c = 0</p>
+    <p class="koef">Введите коэффиценты:</p>
     
-    <p class="chose">Введите коэффиценты уравнения</p>
+    <script src="/js files/first.js"></script>
     <form>
-        <div id="koef">
-            <p class="a">a - <input placeholder="  клик" type="number" id="a"></p>
-            <p class="b">b - <input placeholder="  клик" type="number" id="b"></p>
-            <p class="c">c - <input placeholder="  клик" type="number" id="c"></p>
+        <div id="aa">
+            <p class="a">a</p> <input class="aa" type="number" id="a">
         </div>
-        
-        <button class='btnres' type="reset">Очистить </button>
+        <div id="aa">
+            <p class="a">b</p> <input class="aa" type="number" id="b">
+        </div>
+        <div id="aa">
+            <p class="a">c</p> <input class="aa" type="number" id="c">
+        </div>
+        <button class="btnres" type="reset">СТЕРЕТЬ</button>
     </form>
-    <button class="btn" onclick="solve()">Решить</button>
+    <button class="btn" onclick="solve()">РЕШИТЬ</button>
     <div id="answers">
-        <p id="outD" class="D">D = </p>
-        <p id="outx1" class="x1">x <sub>1</sub> = </p>
-        <p id="outx2" class="x2">x <sub>2</sub> = </p>
+        <p class="D">D = <output type="text" class="dout" id="outD"></p></p>
+        <p class="x1">x<sub>1</sub> = <output type="text" class="dout" id="outx1"></p></p>
+        <p class="2x">x<sub>2</sub> = <output type="text" class="dout" id="outx2"></p></p>
     </div>
-    
-    
     
     
     <script src="/js files/first.js"></script>
