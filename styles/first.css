@@ -15,7 +15,7 @@ body
 
 
 
-@media screen and (max-width: 500px) {
+
     input {
         max-height: 40px;
         border: none;
@@ -110,4 +110,4 @@ body
         background-color: #2E2E2E;
     }
     
-}
+
