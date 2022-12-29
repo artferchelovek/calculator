@@ -41,11 +41,8 @@ function matrix() {
 
     deta = a1*b2*c3 + a2*b3*c1 + b1*c2*a3 - a3*b2*c1 - b3*c2*a1 - a2*b1*c3; // определитель
     console.log(deta);
-    if (deta = 0) {
-        document.getElementById('outx1').innerHTML = '';
-        document.getElementById('outx2').innerHTML = 'корней нет';
-        document.getElementById('outx3').innerHTML = '';
-    } else {
+    document.getElementById('deta').innerHTML = deta;
+
         a11 = b2*c3-b3*c2; // A11
         a21 = -(b1*c3-b3*c1); // A21
         a31 = b1*c2-b2*c1; // A31
@@ -66,8 +63,16 @@ function matrix() {
 
         console.log(x1,x2,x3);
         
-        document.getElementById('outx1').innerHTML = 'x<sub>1</sub> = ' + x1;
-        document.getElementById('outx2').innerHTML = 'x<sub>2</sub> = ' + x2;
-        document.getElementById('outx3').innerHTML = 'x<sub>3</sub> = ' + x3;
+        document.getElementById('outx1').innerHTML = x1;
+        document.getElementById('outx2').innerHTML = x2;
+        document.getElementById('outx3').innerHTML = x3;
+
+    
+    if (deta = 0) {
+        document.getElementById('outx1').innerHTML = '';
+        document.getElementById('outx2').innerHTML = 'корней нет :(';
+        document.getElementById('outx3').innerHTML = '';
     }
+        
+    
 }
