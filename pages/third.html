@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/tgh.css">
+    <title>уравнение по трём точкам</title> 
+</head>
+<body>
+    <a href="/index.html">
+        <div class="back">НАЗАД</div>
+    </a>
+
+    <form>
+        <div id="input">
+            <p class="A">A ( <input type="number" id="a1"> ; <input type="number" id="a2"> )</p>
+            <p class="B">B ( <input type="number" id="b1"> ; <input type="number" id="b2"> )</p>
+            <p class="C">C ( <input type="number" id="c1"> ; <input type="number" id="c2"> )</p>
+            <button class="btnres" type="reset">СТЕРЕТЬ</button>
+        </div>
+    
+    </form>
+    
+    <button class="btn1" onclick="solve1()">
+        <div id="ovalkv">
+            <p class="kvadr">ax<sup>2</sup> + bx + c = 0</p>
+            <div class="krug"></div>
+        </div></button>
+    <p class="gotovo">ГОТОВОЕ УРАВНЕНИЕ</p>
+    <output id="output" class="out"></output>
+
+    <script src="/js files/abc.js"></script>
+</body>
+</html>
