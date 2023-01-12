@@ -46,13 +46,13 @@ function solve() {
             x2 = (-b - d ** (1/2))/(2*a);
             console.log(x1 + '-x1,', x2 + '-x2');
             a2 = 2*a
-            if (x1 % 1 == true) {
+            if (x1 % 1 == 0) {
                 x1 = x1
             } else {
                 x12 = -b - d ** (1/2)
                 x1 = x12, '/', a2
             }
-            if (x2 % 1 == true) {
+            if (x2 % 1 == 0) {
                 x2 = x2
             } else {
                 x13 = -b + d ** (1/2)
