@@ -1,5 +1,5 @@
 function solve() {
-    var a, b, c, d, x1, x2,u,j;
+    var a, a2, a3, b, c, d, x1, x2,u,j, x12,x13;
     a = document.getElementById('a').value;
     a = parseFloat(a);
 
@@ -45,6 +45,20 @@ function solve() {
 
             x2 = (-b - d ** (1/2))/(2*a);
             console.log(x1 + '-x1,', x2 + '-x2');
+            a2 = 2*a
+            if (x1 % a2 == 0) {
+                x1 = x1
+            } else {
+                x12 = -b - d ** (1/2)
+                x1 = x12, '/', a2
+            }
+            if (x2 % a2 == 0) {
+                x2 = x2
+            } else {
+                x13 = -b + d ** (1/2)
+                x1 = x13, '/', a2
+            }
+            
             document.getElementById('outD').innerHTML =  d;
             document.getElementById('outx1').innerHTML =  x1;
             document.getElementById('outx2').innerHTML = x2;
