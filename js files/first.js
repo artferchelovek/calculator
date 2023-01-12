@@ -56,9 +56,10 @@ function solve() {
             
             if (x2 % 1 == 0) {
                 x2 = x2;
+                document.getElementById('outx2').innerHTML = x2
             } else {
                 x13 = -b + d ** (1/2)
-                document.getElementById('outx2').innerHTML = x13 + '/' + a2;
+                document.getElementById('outx2').innerHTML = '<sup>' + x13 +'</sup>' + '/' + a2;
             }
 
 
