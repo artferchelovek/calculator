@@ -56,7 +56,7 @@ function solve() {
                 x2 = x2
             } else {
                 x13 = -b + d ** (1/2)
-                x1 = x13, '/', a2
+                x2 = x13, '/', a2
             }
             
             document.getElementById('outD').innerHTML =  d;
