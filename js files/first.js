@@ -48,19 +48,22 @@ function solve() {
             a2 = 2*a
             if (x1 % 1 == 0) {
                 x1 = x1
+                document.getElementById('outx1').innerHTML =  x1;
             } else {
-                x12 = -b - d ** (1/2)
-                x1 = x12, '/', a2
-            }
-            if (x2 % 1 == 0) {
-                x2 = x2
-            } else {
-                x13 = -b + d ** (1/2)
-                x2 = x13, '/', a2
+                x12 = -b - d ** (1/2);
+                document.getElementById('outx1').innerHTML = x12 + '/' + a2;
             }
             
+            if (x2 % 1 == 0) {
+                x2 = x2;
+            } else {
+                x13 = -b + d ** (1/2)
+                document.getElementById('outx2').innerHTML = x13 + '/' + a2;
+            }
+
+
             document.getElementById('outD').innerHTML =  d;
-            document.getElementById('outx1').innerHTML =  x1;
+            
             document.getElementById('outx2').innerHTML = x2;
         } else {
             document.getElementById('outD').innerHTML =  d;
