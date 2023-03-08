@@ -1,5 +1,5 @@
 function solve() {
-    var a, a2, a3, b, c, d, x1, x2,u,j, x12,x13;
+    var a, b, c, d, x1, x2,u,j;
     a = document.getElementById('a').value;
     a = parseFloat(a);
 
@@ -28,43 +28,58 @@ function solve() {
     console.log(d + ' дискриминант');
 
     j = d ** (1/2);
-    console.log(j);
+    console.log(j, ' - корень из D');
     j = j.toFixed(0);
-    console.log(j);
+    // console.log(j);
     j = j ** 2;
-    console.log(j);
+    console.log(j, ' - квадрат корня из D');
 
-    
+    x1 = (-b + d ** (1/2))/(2*a);
+    j1 = x1 ** (1/2);
+    console.log(x1, ' - корень из х1');
+    j1 = j1.toFixed(0);
+    // console.log(j1);
+    j1 = j1 ** 2;
+    console.log(j1);
+
+    if  ( x1 != j1) {
+        x1 = x1
+    } else {
+        x1 = (-b + d ** (1/2)) + '/' + 2*a
+    }
+
+    console.log(x1)
 
 
 
+
+
+
+    x2 = (-b - d ** (1/2))/(2*a);
+    console.log(x2, ' - x2')
+    j2 = x2 ** (1/2);
+    console.log(j2, ' - корень из x2');
+    j2 = j2.toFixed(0);
+    // console.log(j1);
+    j2 = j2 ** 2;
+    console.log(j2);
+
+    if  ( x2 == j2) {
+        x2 = x2
+    } else {
+        x2 = (-b - d ** (1/2)) + '/' + 2*a
+    }
+
+    console.log(x2)
 
     if (d >= 0  ) {
         if (j == d) {
-            x1 = (-b + d ** (1/2))/(2*a);
+            
 
-            x2 = (-b - d ** (1/2))/(2*a);
+            
             console.log(x1 + '-x1,', x2 + '-x2');
-            a2 = 2*a
-            if (x1 % 1 == 0) {
-                x1 = x1
-                document.getElementById('outx1').innerHTML =  x1;
-            } else {
-                x12 = -b - d ** (1/2);
-                document.getElementById('outx1').innerHTML = x12 + '/' + a2;
-            }
-            
-            if (x2 % 1 == 0) {
-                x2 = x2;
-                document.getElementById('outx2').innerHTML = x2
-            } else {
-                x13 = -b + d ** (1/2)
-                document.getElementById('outx2').innerHTML = '<sup>' + x13 +'</sup>' + '/' + a2;
-            }
-
-
             document.getElementById('outD').innerHTML =  d;
-            
+            document.getElementById('outx1').innerHTML =  x1;
             document.getElementById('outx2').innerHTML = x2;
         } else {
             document.getElementById('outD').innerHTML =  d;

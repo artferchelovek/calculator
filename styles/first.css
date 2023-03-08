@@ -213,7 +213,7 @@ body
         font-size: 20px;
         left: 45%;
         border: none;
-        top: 50%;
+        top: 45%;
         border-radius: 16px;
         background-color: #B96666;
         color: #FFFFFF;
@@ -224,7 +224,7 @@ body
         position: absolute;
         font-size: 20px;
         left: 45%;
-        top: 58%;
+        top: 53%;
         border: none;
         border-radius: 16px;
         background-color: #2E2E2E;
@@ -236,7 +236,7 @@ body
     #answers{
         margin: 0 auto;
         font-size: 30px;
-        margin-top: 18%;
+        margin-top: 15%;
         margin-left: 40%;
     }
 
