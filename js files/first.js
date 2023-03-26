@@ -42,10 +42,10 @@ function solve() {
     j1 = j1 ** 2;
     console.log(j1);
 
-    if  ( x1 != j1) {
+    if  ( x1 == j1) {
         x1 = x1
     } else {
-        x1 = (-b + d ** (1/2)) + '/' + 2*a
+        x1 = (-b - d ** (1/2)) + '/' + 2*a
     }
 
     console.log(x1)
@@ -68,6 +68,7 @@ function solve() {
         x2 = x2
     } else {
         x2 = (-b - d ** (1/2)) + '/' + 2*a
+
     }
 
     console.log(x2)
@@ -79,8 +80,30 @@ function solve() {
             
             console.log(x1 + '-x1,', x2 + '-x2');
             document.getElementById('outD').innerHTML =  d;
-            document.getElementById('outx1').innerHTML =  x1;
-            document.getElementById('outx2').innerHTML = x2;
+            if (((-b - d ** (1/2)) > (2*a)) && (((-b-d ** (1/2)) % (2*a)) != 0)) {
+                x2chis = (-b - d ** (1/2)) % (2*a); // числитель
+                x2zel = ((-b -d ** (1/2)) - x2chis) / (2*a);
+                x2znam = (2*a);
+                if (((2*a) % x2chis) == 0) {
+                    x2znam = (2*a) / x2chis;
+                    x2chis = x2chis / x2chis;
+                }
+                document.getElementById('outx2').innerHTML = x2zel + '  <sup>' + x2chis + '</sup>' + '/' + '<sub>' + x2znam + '</sub>';
+
+            } else {
+                document.getElementById('outx2').innerHTML =  x2;
+            }
+            if (((-b + d ** (1/2)) > (2*a)) && (((-b+d ** (1/2)) % (2*a)) != 0)) {
+                x1chis = (-b + d ** (1 / 2)) % (2 * a) // числитель
+                x1zel = ((-b + d ** (1 / 2)) - x1chis) / (2 * a);
+                x1znam = (2 * a)
+                if (((2 * a) % x1chis) == 0) {
+                    x1znam = (2 * a) / x1chis
+                    x1chis = x1chis / x1chis
+                }
+            } else {
+                document.getElementById('outx1').innerHTML = x1zel + '  <sup>' + x1chis + '</sup>' + '/' + '<sub>' + x1znam + '</sub>'
+            }
         } else {
             document.getElementById('outD').innerHTML =  d;
             b = -b
