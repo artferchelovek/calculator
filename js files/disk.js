@@ -87,10 +87,11 @@ function solve() {
                     x2zel = ((-b -d ** (1/2)) - x2chis) / znam;
                     console.log('чг ')
                     console.log(x2zel)
-
+                    
                     document.getElementById('outx2').innerHTML = ' ' + x2zel + '  <sup>' + x2chis + '</sup>' + '/' + '<sub>' + znam + '</sub>'
 
                 } else {
+                 
                 document.getElementById('outx2').innerHTML = '  <sup>' + x2chis + '</sup>' + '/' + '<sub>' + znam + '</sub>'}
             } else {
                 document.getElementById('outx2').innerHTML = x2
@@ -102,4 +103,19 @@ function solve() {
 
 
 
+}
+
+function solve1() {
+    var a1,a2,b1,b2,q1,q2;
+
+    a1 = document.getElementById('a1').value
+    a1 = parseFloat(a1)
+
+    b1 = document.getElementById('b1').value
+    b1 = parseFloat(b1)
+
+    q1 = document.getElementById('q1').value
+    q1 = parseFloat(q1)
+
+    console.log(a1,b1,q1)
 }

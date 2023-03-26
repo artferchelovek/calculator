@@ -119,3 +119,7 @@ function solve() {
 
 
 }
+
+function solve1() {
+    console.log('мяу')
+}
