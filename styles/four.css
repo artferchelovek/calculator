@@ -165,20 +165,22 @@ output {
         display: none;
     }
     .back {
+        font-weight: bold;
         background-color: black;
-        font-size: 18px;
+        font-size: 20px;
         color: white;
         border-radius: 16px;
         max-width: 85px;
         text-align: center;
         margin: 0 auto;
         margin-top: 15.5%;
-        padding: 2% 3.22%;
+        padding: 3.5% 6%;
         margin-bottom: 8%;
     }
 
     #urav {
-        font-size: 20px;
+        font-size: 28px;
+        font-weight: bold;
         margin-top: 10%;
         font-weight: bolder;
         text-align: center;
@@ -194,9 +196,10 @@ output {
     }
 
     #table {
+        font-weight: bold;
         margin: 0 auto;
         font-size: 28px;
-        width: 70%;
+        width: 80%;
         margin-bottom: 10%;
 
     }
