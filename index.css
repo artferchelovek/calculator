@@ -18,6 +18,7 @@ body
 
 @media screen and (max-width: 500px) {
     .main {
+
         font-size: 30px;
         text-align: center;
         
@@ -68,6 +69,7 @@ body
     #ovalkv .kvadr {
         margin-left: 12%;
         padding: 1.5% 5%;
+        font-weight: bold;
 
     }
 
@@ -89,6 +91,7 @@ body
         padding: 5% 5%;
         max-width: 260px;
         margin-bottom: 6%;
+        font-weight: bold;
     }
 
     #instr {
@@ -127,6 +130,7 @@ body
         max-width: 260px;
         margin-bottom: 4%;
         margin-left: 8%;
+        font-weight: bold;
     }
     #ovalkv {
         margin-top: 6%;
@@ -148,6 +152,7 @@ body
     #ovalkv .kvadr {
         margin-left: 12%;
         padding: 1.5% 5%;
+        font-weight: bold;
         
 
     }

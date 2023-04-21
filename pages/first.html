@@ -31,9 +31,12 @@
         <div id="aa">
             <p class="a">c</p> <input class="aa" type="number" id="c">
         </div>
-        <button class="btnres" type="reset">СТЕРЕТЬ</button>
+        <div id="btns">
+            <button class="btnres" type="button" onclick="clearInput()">СТЕРЕТЬ</button>
+            <button class="btn" type="button" onclick="solveEquations()"> РЕШИТЬ</button>
+        </div>
     </form>
-    <button class="btn" onclick="solve()">РЕШИТЬ</button>
+
     <div id="answers">
         <p class="D">D = <output type="text" class="dout" id="outD"></p></p>
         <p class="x1">x<sub>1</sub> = <output type="text" class="dout" id="outx1"></p></p>
