@@ -16,7 +16,7 @@ body
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .main {
 
         font-size: 30px;
@@ -111,7 +111,7 @@ body
     
 }
 
-@media screen and (max-width: 1200px) and (min-width:501px) {
+@media screen and (max-width: 1200px) and (min-width:801px) {
     .main {
         display: none;
     }
