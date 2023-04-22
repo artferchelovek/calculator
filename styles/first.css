@@ -22,7 +22,7 @@ body
         height: 15%;
     }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     input {
         max-height: 40px;
         border: none;
@@ -132,7 +132,7 @@ body
 }
 
 
-@media screen  and (min-width:801px) {
+@media screen  and (min-width:1001px) {
     #instr {
 
         position: absolute;
