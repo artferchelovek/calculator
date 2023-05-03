@@ -87,11 +87,11 @@ function solve() {
                     x2zel = ((-b -d ** (1/2)) - x2chis) / znam;
                     console.log('чг ')
                     console.log(x2zel)
-                    
-                    document.getElementById('outx2').innerHTML = ' ' + x2zel + '  <sup>' + x2chis + '</sup>' + '/' + '<sub>' + znam + '</sub>'
+
+                    // document.getElementById('outx2').innerHTML = ' ' + x2zel + '  <sup>' + x2chis + '</sup>' + '/' + '<sub>' + znam + '</sub>'
 
                 } else {
-                 
+
                 document.getElementById('outx2').innerHTML = '  <sup>' + x2chis + '</sup>' + '/' + '<sub>' + znam + '</sub>'}
             } else {
                 document.getElementById('outx2').innerHTML = x2
@@ -101,7 +101,26 @@ function solve() {
         }
     }
 
+    if (d < 0) {
+        document.getElementById('outx1').innerHTML = ' D < 0,   '
+        document.getElementById('outx2').innerHTML = ' корней нет '
+    }
 
+}
 
+function clearInput() {
+    document.getElementById("a").value = "";
+    document.getElementById("b").value = "";
+    document.getElementById("c").value = "";
+    document.getElementById("outx1").innerHTML = " введите";
+    document.getElementById("outx2").innerHTML = " числа ";
+}
+
+function getGCD(a, b) {
+    if (b == 0) {
+        return a;
+    } else {
+        return getGCD(b, a % b);
+    }
 }
 
